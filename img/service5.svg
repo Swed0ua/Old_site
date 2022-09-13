@@ -1,0 +1,23 @@
+<svg width="114" height="46" viewBox="0 0 114 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="5" fill="#00FF29"/>
+<rect x="5" width="46" height="5" transform="rotate(90 5 0)" fill="#00FF29"/>
+<rect x="34" width="46" height="5" transform="rotate(90 34 0)" fill="#00FF29"/>
+<rect x="26" y="9" width="5" height="18" transform="rotate(90 26 9)" fill="#00FF29"/>
+<rect x="26" y="17" width="5" height="18" transform="rotate(90 26 17)" fill="#00FF29"/>
+<rect x="26" y="25" width="5" height="18" transform="rotate(90 26 25)" fill="#00FF29"/>
+<rect y="41" width="32" height="5" fill="#00FF29"/>
+<rect x="40" width="34" height="5" fill="#00FF29"/>
+<rect x="45" width="46" height="5" transform="rotate(90 45 0)" fill="#00FF29"/>
+<rect x="74" width="46" height="5" transform="rotate(90 74 0)" fill="#00FF29"/>
+<rect x="66" y="9" width="5" height="18" transform="rotate(90 66 9)" fill="#00FF29"/>
+<rect x="66" y="17" width="5" height="18" transform="rotate(90 66 17)" fill="#00FF29"/>
+<rect x="66" y="25" width="5" height="18" transform="rotate(90 66 25)" fill="#00FF29"/>
+<rect x="40" y="41" width="32" height="5" fill="#00FF29"/>
+<rect x="80" width="34" height="5" fill="#00FF29"/>
+<rect x="85" width="46" height="5" transform="rotate(90 85 0)" fill="#00FF29"/>
+<rect x="114" width="46" height="5" transform="rotate(90 114 0)" fill="#00FF29"/>
+<rect x="106" y="9" width="5" height="18" transform="rotate(90 106 9)" fill="#00FF29"/>
+<rect x="106" y="17" width="5" height="18" transform="rotate(90 106 17)" fill="#00FF29"/>
+<rect x="106" y="25" width="5" height="18" transform="rotate(90 106 25)" fill="#00FF29"/>
+<rect x="80" y="41" width="32" height="5" fill="#00FF29"/>
+</svg>

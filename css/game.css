@@ -1,0 +1,127 @@
+.labels {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00FF29;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+
+.frame {
+  margin: auto;
+  padding: 5px 0px;
+  width: 56px;
+  border: 2px solid #00FF29;
+}
+
+.btn_game {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background-color: black;
+  color: #00FF29;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: 0px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.btn-rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.fa {
+  font-size: 14px;
+}
+
+.flipx {
+  transform: scaleX(-1);
+}
+
+#score {
+  margin-top: 5px;
+}
+
+#outer-board {
+  width: 365px;
+  margin: auto;
+}
+
+#board {
+  float: left;
+  position: relative;
+  width: 269px;
+  height: 419px;
+  background-color: #000000;
+  margin: 10px auto;
+  overflow: hidden;
+  border: 5px solid #00FF29;
+}
+
+#stats {
+  float: right;
+  position: relative;
+  background-color: black;
+  width: 70px;
+  height: 423px;
+  margin: 10px auto;
+  border: 3px solid #00FF29;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  background-color: #303a21;
+  color: #00FF29;
+  z-index: 2;
+  text-align: center;
+}
+
+#message {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+#new-game {
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.block,
+.empty {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
+.empty {
+  opacity: 0;
+}
+
+.inner-tile {
+  position: absolute;
+  border: 3px solid #00FF29;
+  width: 9px;
+  height: 9px;
+}
+
+.inner-inner-tile {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: 1px;
+}
