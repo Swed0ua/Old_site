@@ -60,17 +60,17 @@ body > * {
     margin-bottom: 0;
 }
 .main_header{
-    height: 39px;
+    height: 34px;
     width: 100%;
     background-color: #009F99;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 35px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,6 +85,7 @@ body > * {
     top: 0;
     background: url(../img/pattern.png);
     width: calc(100% / 3);
+    width: 492px;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,19 +97,19 @@ body > * {
 }
 .main_nav{
     background-color: #009F99;
-    height: 39px;
+    height: 32px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 15px;
+    padding-right: 20px;
     position: fixed;
-    top: 42px;
+    top: 34px;
     z-index: 5;
 }
 .main_nav .contact_modalBtn,
 .main_nav .menu_btn{
-    font-size: 32px;
+    font-size: 28px;
     line-height: 145.5%;
     text-decoration: none;
     color: #000;
@@ -170,7 +171,7 @@ body > * {
     display: flex;
 }
 .main_nav_right .contact_modalBtn{
-    margin-right: 40px;
+    margin-right: 0px;
 }
 .social_list{
     display: flex;
@@ -180,19 +181,18 @@ body > * {
 .social_list li{
     list-style: none;
     margin-right: 4px;
-    height: 100%;
+    height: 32px;
 }
 .social_list li:last-child{
     margin-right: 0;
 }
 .social_list li a{
     width: 35px;
-    height: 100%;
+    height: 32px;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     color: white;
     font-size: 35px;
     text-decoration: none;
@@ -896,19 +896,21 @@ body::-webkit-scrollbar{
 }
 .group_techno_welcome p{
 	overflow: hidden;
-	white-space: nowrap; 
-	letter-spacing: .15em; 
+	white-space: nowrap;
+	letter-spacing: .15em;
 	width: 0px;
 	animation: typing .3s steps(100) forwards;
+	-webkit-animation: typing .3s steps(100) forwards;
 }
 
 .group_techno_webdesign p{
 	overflow: hidden;
-	white-space: nowrap; 
-	letter-spacing: .15em; 
+	white-space: nowrap;
+	letter-spacing: .15em;
 	width: 0px;
 	animation: typing .1s steps(100) forwards;
 	animation-delay: .3s;
+	-webkit-animation: typing .1s steps(100) forwards;
 }
 
 .group_techno_version p{
@@ -939,19 +941,21 @@ body::-webkit-scrollbar{
 
 .group_techno_loaded p{
 	overflow: hidden;
-	white-space: nowrap; 
-	letter-spacing: .15em; 
+	white-space: nowrap;
+	letter-spacing: .15em;
 	width: 0px;
 	animation: typing .3s steps(100) forwards;
+	-webkit-animation: typing .3s steps(100) forwards;
 	animation-delay: 1.1s;
 }
 
 .group_techno_loading_files p{
 	overflow: hidden;
-	white-space: nowrap; 
-	letter-spacing: .15em; 
+	white-space: nowrap;
+	letter-spacing: .15em;
 	width: 0px;
-	animation: typing .3s steps(100) forwards;
+	animation: typing .6s steps(100) forwards;
+	-webkit-animation: typing .6s steps(100) forwards;
 	animation-delay: 1.4s;
 }
 
@@ -1412,19 +1416,29 @@ nav *  ::selection {
   
   @keyframes twitch {
     0% {
-      padding: 20px;
+        padding: 0px;
+        padding-top: 91px;
+        padding-bottom: 58px;
     }
     50% {
-      padding: 20px;
+      padding: 0px;
+      padding-top: 91px;
+    padding-bottom: 58px;
     }
     51% {
-      padding: 19px;
+      padding: 1px;
+      padding-top: 92px;
+    padding-bottom: 59px;
     }
     50% {
-      padding: 20px;
+      padding: 0px;
+      padding-top: 91px;
+    padding-bottom: 58px;
     }
     100% {
-      padding: 20px;
+      padding: 0px;
+      padding-top: 91px;
+    padding-bottom: 58px;
     }
   }
   

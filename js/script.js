@@ -50,14 +50,19 @@ $(document).ready(function(e){
     $('a[data-modal-btn]').on('click', function(e){
         e.preventDefault();
         let modalId = $(this).attr('href');
+        $('#modalAllPagesHref').on('click', ()=>{
+            $('.showModal').removeClass('showModal')
+        })
         if($(modalId).hasClass('showModal')){
             $('.showModal').removeClass('showModal')
         }else{
             $('.showModal').removeClass('showModal')
             $(modalId).addClass('showModal');
+            
         }
 
         let modalUrl = $(this).attr('data-modal-btn');
+        let modalTarget = $(this).attr('target')
         if(modalId == '#modalMusic'){
             if(myaudio.paused){
                 myaudioPlayStatus = false
@@ -71,6 +76,9 @@ $(document).ready(function(e){
         if(modalId == '#modalAllPages'){
             if(modalUrl != ''){
                 $('#modalAllPagesHref').attr('href', modalUrl)
+                if (modalTarget) {
+                    $('#modalAllPagesHref').attr('target', modalTarget)
+                }
             }
         }
     })
@@ -166,7 +174,7 @@ $(document).ready(function(e){
             setTimeout(function(){
             $('#preloader').hide();
         },200)
-    },1600)
+    },1900)
     // start game
     $('#btnPlayGame').on('click', function(e){
         e.preventDefault();
