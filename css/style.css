@@ -44,7 +44,6 @@ body > * {
     display: none;
 }
 .copyRight{
-    margin-left: 5px;
     margin-right: 5px;
     max-width: 20px;
 }
@@ -113,8 +112,8 @@ body > * {
     line-height: 145.5%;
     text-decoration: none;
     color: #000;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .main_nav.showMenu .menu_btn{
     background: #000;
@@ -204,17 +203,17 @@ body > * {
 .services_block{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 118px;
-    padding-right: 118px;
-    padding-top: 75px;
+    padding-left: 57px;
+    padding-right: 57px;
+    padding-top: 65px;
     margin-bottom: 80px;
 }
 .services_block .services_item{
-    width: calc(100% / 3 - 100px);
-    height: 150px;
-    margin-right: 100px;
+    width: 292px;
+    box-sizing: border-box;
+    height: 125px;
+    margin-right: 40px;
     border: 5px solid #00FF29;
     text-align: center;
     text-decoration: none;
@@ -225,7 +224,7 @@ body > * {
     justify-content: center;
 }
 .services_block .services_item .services_item_img{
-    width: 140px;
+    width: 112.5px;
     position: absolute;
     top: -20px;
     left: 0;
@@ -240,8 +239,8 @@ body > * {
     content: '';
     position: absolute;
     top: 5px;
-    left: 5px;
-    right: 5px;
+    left: 10px;
+    right: 10px;
     bottom: 5px;
     border: 5px solid #00FF29;
 }
@@ -249,15 +248,16 @@ body > * {
     font-size: 32px;
     line-height: 145.5%;
     color: #00FF29;
+    margin-top: 30px;
 }
-.services_block .services_item:nth-child(3n){
+.services_block .services_item:nth-child(4n){
     margin-right: 0;
 }
 .beforeFooter{
     font-size: 32px;
     line-height: 145.5%;
     color: #00FF29;
-    padding-left: 45px;
+    padding-left: 50px;
 }
 
 .breadcrumb__text {
@@ -320,16 +320,17 @@ body > * {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-left: 25px;
+    padding-left: 20px;
     padding-right: 25px;
     z-index: 4;
 }
 .main_footer_list{
     display: flex;
     counter-reset: li;
+    margin-bottom: 10px;
 }
 .main_footer_list li{
-    margin-right: 30px;
+    margin-right: 20px;
     list-style: none;
     counter-increment: li;
 }
@@ -344,13 +345,15 @@ body > * {
     background-color: #009BA2;
     color: #000;
     font-size: 32px;
+    height: 100%;
     line-height: normal;
-    padding: 5px 0;
     padding-right: 30px;
     text-decoration: none;
     display: inline-flex;
-    align-items: center;
+	line-height: 25px;
 }
+
+
 
 /* modal */
 .modal_container{
@@ -693,12 +696,13 @@ input:-moz-placeholder,input::-moz-placeholder,input::-webkit-input-placeholder 
     bottom: 57px;
     width: 100%;
     background-color: black;
+    margin-top: 10px;
 }
 .main_footer {
     background-color: black;
 }
 .breadcrumb_container{
-	padding-left: 45px;
+	padding-left: 50px;
 }
 .blogs_container{
 	color: #00FF29;
@@ -923,11 +927,12 @@ body::-webkit-scrollbar{
 }
 .group_techno_device_driver p{
 	overflow: hidden;
-	white-space: nowrap; 
-	letter-spacing: .15em; 
+	white-space: nowrap;
+	letter-spacing: .15em;
 	width: 0px;
 	animation: typing .1s steps(100) forwards;
 	animation-delay: .8s;
+	-webkit-animation: typing .1s steps(100) forwards;
 }
 
 .group_techno_startup p{
@@ -978,22 +983,23 @@ nav *  ::selection {
 /******************************/
 @media (max-width: 1600px){
     .main_footer_list li a{
-        font-size: 28px;
         display: flex;
-        align-items: center;
-        width: 100%;
+        align-items: flex-start;
+        width: 115px;
         padding-right: 0;
     }
     .main_footer_list li::before{
-        font-size: 32px;
+        font-size: 40px;
+        letter-spacing:-4px;
     }
     .main_footer_list li{
         display: flex;
-        width: 100%;
+        width: fit-content;
         align-items: center;
     }
     .main_footer_list{
         justify-content: space-between;
+        height: 32px;
     }
     .main_footer_list li:last-child{
         margin-right: 0;
@@ -1001,12 +1007,12 @@ nav *  ::selection {
 }
 @media (max-width: 1440px){
     .services_block{
-        padding: 50px 8.125% 119px 8.125%;
+        /* padding: 50px 8.125% 119px 8.125%; */
     }
     .services_block .services_item{
-        width: calc(100% / 3 - 6.5%);
+        /* width: calc(100% / 3 - 6.5%);
         margin-right: 8.292%;
-        height: 125px;
+        height: 125px; */
     }
 }
 @media (max-width: 1250px){
