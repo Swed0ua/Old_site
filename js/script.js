@@ -146,19 +146,55 @@ $(document).ready(function(e){
 	})
     
     // input mask
-    let dotted = '.........................';
-    $('.form_message input').attr('placeholder',dotted);
-    $('.form_message input').inputmask({"mask": "*************************"});
+    /* let dotted = '...............';
+    $('.form_message input').attr('placeholder',dotted); */
 
-    function maskFunc(value){
-        if($(value).inputmask('unmaskedvalue').length > 24){
-            $(value).inputmask('remove');
-        }else{
-            $(value).inputmask({"mask": "*************************"});
+    let form_quotes = document.querySelectorAll('.form_quote')
+    let t_ind = 23/* 
+    $('.form_input').inputmask({"mask": "***************"}); */
+    
+    const revalue_mask_plsh = (el, val, select = false) => {
+        el.innerHTML = ''
+        for(let i = 0; i<t_ind; i++){
+            if(val>=i){
+                el.innerHTML += ' ';
+            } else {
+                el.innerHTML += '.'
+            }
         }
     }
+
+    form_quotes.forEach(form_quote => {
+        quote_input = form_quote.querySelector('.form_input')
+        
+        form_quote.addEventListener('input', (e)=> {
+            let val = e.path[0].value
+            let inp = e.path[1]
+            let mask_text = inp.querySelector('.breadcrumb__text')
+            let mask__ = inp.querySelector('.breadcrumb___')
+            let mask_plsh = inp.querySelector('.breadcrumb__mask')
+            mask_text.innerHTML = val
+            let mask_text_width = mask_text.clientWidth
+            if (e.path[0].clientWidth > mask_text_width) {
+                mask__.style.left = mask_text_width + 'px'
+            }
+        
+            e.path[0].addEventListener('change', (e)=>{
+                console.log('a')
+                revalue_mask_plsh(mask_plsh, e.path[0].value.length-1, false)
+            })
+
+            mask_plsh.style.left = mask_text_width + 13 + 'px'
+            revalue_mask_plsh(mask_plsh, val.length, true)
+        })
+    });
+
+
+    function maskFunc(value){
+        
+    }
     // Name
-    $('#name').on('keyup',maskFunc('#name'))
+  /*   $('#name').on('keyup',maskFunc('#name'))
     // Email
     $('#email').on('keyup',maskFunc('#email'))
     // Phone
@@ -166,7 +202,7 @@ $(document).ready(function(e){
     // Country
     $('#country').on('keyup',maskFunc('#country'))
     // Messenger
-    $('#messenger').on('keyup',maskFunc('#messenger'))
+    $('#messenger').on('keyup',maskFunc('#messenger')) */
 
     // Loader
     setTimeout(function(){
@@ -219,11 +255,18 @@ let input_bot_text = document.querySelector('.breadcrumb__text');
 let input_bot_text_width = input_bot_text.clientWidth;
 
 let input_bot = document.querySelector('.input_style')
+
 input_bot.addEventListener('input', ()=>{
     let breadcrumb___ = document.querySelector('.breadcrumb___')
     input_bot_text.innerHTML = input_bot.value
     input_bot_text = document.querySelector('.breadcrumb__text');
     input_bot_text_width = input_bot_text.clientWidth;
-    input_bot_text_width >= 300 ? input_bot_text_width = 300 : true
+    if(input_bot_text_width >= 300){
+        input_bot_text_width = 300
+        breadcrumb___.style.display = 'none'    
+    } else {
+        breadcrumb___.style.display = 'block'    
+    }
     breadcrumb___.style.left = input_bot_text_width + 'px'
 })
+
